@@ -1,4 +1,3 @@
-import logo from "./assets/logo.png"
 import seminars from "./assets/seminars.png"
 import workshop from "./assets/workshop.png"
 import kids from "./assets/kids.png"
@@ -6,7 +5,6 @@ import image1 from './assets/image1.png'
 import image2 from './assets/image2.png'
 import image3 from './assets/image3.png'
 
-import greet from "./assets/greeting.png"
 import { Icons } from "./components/Icons"
 import VideoPlayer from "./components/VideoPlayer"
 
@@ -15,9 +13,7 @@ export default function App() {
     const goToWhatsApp = () => {
         window.location.href = 'https://wa.me/2347010876015';
     }
-    const goToKlick = () => {
-        window.location.href = 'https://www.klick.africa/en/store/The-KLICK-Event-Store/1521205'
-    }
+
     return (
         <>
             <div className="circle-container">
