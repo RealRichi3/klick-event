@@ -84,7 +84,7 @@ export default function App() {
 
                         <div className="flex flex-col md:flex-row items-center justify-center gap-5 px-10">
                             {/* cards */}
-                            <a href="https://www.facebook.com/klickafricaa" rel="noreferrer" target="_blank">
+                            <a href="https://www.klick.africa/en/store/The-KLICK-Event-Store/1521205" rel="noreferrer" target="_blank">
                                 <div className="hover:bg-white hover:text-blue-400 hover:font-semibold rounded-[50px] border flex flex-col justify-between space-y-10 mx-auto p-8 items-center text-center min-h-fit md:h-[500px] w-[350px]">
                                     <h1 className="border px-4 py-2 hover:cursor-pointer  hover:border-blue-400 transition-all" >SILVER</h1>
                                     <div className="space-y-4">
@@ -96,7 +96,7 @@ export default function App() {
                                 </div>
                             </a>
 
-                            <a href="https://www.facebook.com/klickafricaa" rel="noreferrer" target="_blank">
+                            <a href="https://www.klick.africa/en/store/The-KLICK-Event-Store/1521205" rel="noreferrer" target="_blank">
                                 <div className="hover:bg-white hover:text-blue-400 hover:font-semibold rounded-[50px] border flex flex-col justify-between space-y-10 mx-auto p-8 items-center text-center min-h-fit md:h-[500px] w-[350px]">
                                     <h1 className="border px-4 py-2 hover:cursor-pointer hover:border-blue-400 transition-all" >PLATINUM</h1>
                                     <div className="space-y-4">
@@ -111,7 +111,7 @@ export default function App() {
                                 </div>
                             </a>
 
-                            <a href="https://www.facebook.com/klickafricaa" rel="noreferrer" target="_blank">
+                            <a href="https://www.klick.africa/en/store/The-KLICK-Event-Store/1521205" rel="noreferrer" target="_blank">
                                 <div className="hover:bg-white hover:text-blue-400 hover:font-semibold rounded-[50px] border flex flex-col justify-between space-y-10 mx-auto p-8 items-center text-center min-h-fit md:h-[500px] w-[350px]">
                                     <h1 className="border px-4 py-2 hover:cursor-pointer hover:border-blue-400 transition-all" >GOLD</h1>
                                     <div className="space-y-4">
