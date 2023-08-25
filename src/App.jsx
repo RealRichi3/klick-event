@@ -83,40 +83,46 @@ export default function App() {
 
                         <div className="flex flex-col md:flex-row items-center justify-center gap-5 px-10">
                             {/* cards */}
-                            <div className="hover:bg-white hover:text-blue-400 hover:font-semibold rounded-[50px] border flex flex-col justify-between space-y-10 mx-auto p-8 items-center text-center min-h-fit w-[350px]">
-                                <h1 className="border px-4 py-2 hover:cursor-pointer  hover:border-blue-400 transition-all" >SILVER</h1>
-                                <div className="space-y-4">
-                                    <p>6 x 2 table</p>
-                                    <p>2 products images <br />
-                                        & logo featured on social media</p>
+                            <a href="https://www.facebook.com/klickafricaa" rel="noreferrer" target="_blank">
+                                <div className="hover:bg-white hover:text-blue-400 hover:font-semibold rounded-[50px] border flex flex-col justify-between space-y-10 mx-auto p-8 items-center text-center min-h-fit w-[350px]">
+                                    <h1 className="border px-4 py-2 hover:cursor-pointer  hover:border-blue-400 transition-all" >SILVER</h1>
+                                    <div className="space-y-4">
+                                        <p>6 x 2 table</p>
+                                        <p>2 products images <br />
+                                            & logo featured on social media</p>
+                                    </div>
+                                    <h1 className="text-yellow-400 text-2xl font-semibold">N19,000</h1>
                                 </div>
-                                <h1 className="text-yellow-400 text-2xl font-semibold">N19,000</h1>
-                            </div>
+                            </a>
 
-                            <div className="hover:bg-white hover:text-blue-400 hover:font-semibold rounded-[50px] border flex flex-col justify-between space-y-10 mx-auto p-8 items-center text-center min-h-fit w-[350px]">
-                                <h1 className="border px-4 py-2 hover:cursor-pointer hover:border-blue-400 transition-all" >PLATINUM</h1>
-                                <div className="space-y-4">
-                                    <p>6 x 2 table</p>
-                                    <p>2 products images <br />
-                                        & logo featured on social media</p>
-                                    <p>Front row placement</p>
-                                    <p>30 minutes professional product photography</p>
-                                    <p>1 Instagram paid advert</p>
+                            <a href="https://www.facebook.com/klickafricaa" rel="noreferrer" target="_blank">
+                                <div className="hover:bg-white hover:text-blue-400 hover:font-semibold rounded-[50px] border flex flex-col justify-between space-y-10 mx-auto p-8 items-center text-center min-h-fit w-[350px]">
+                                    <h1 className="border px-4 py-2 hover:cursor-pointer hover:border-blue-400 transition-all" >PLATINUM</h1>
+                                    <div className="space-y-4">
+                                        <p>6 x 2 table</p>
+                                        <p>2 products images <br />
+                                            & logo featured on social media</p>
+                                        <p>Front row placement</p>
+                                        <p>30 minutes professional product photography</p>
+                                        <p>1 Instagram paid advert</p>
+                                    </div>
+                                    <h1 className="text-yellow-400 text-2xl font-semibold">N60,000</h1>
                                 </div>
-                                <h1 className="text-yellow-400 text-2xl font-semibold">N60,000</h1>
-                            </div>
+                            </a>
 
-                            <div className="hover:bg-white hover:text-blue-400 hover:font-semibold rounded-[50px] border flex flex-col justify-between space-y-10 mx-auto p-8 items-center text-center min-h-fit w-[350px]">
-                                <h1 className="border px-4 py-2 hover:cursor-pointer hover:border-blue-400 transition-all" >GOLD</h1>
-                                <div className="space-y-4">
-                                    <p>6 x 2 table</p>
-                                    <p>2 products images <br />
-                                        & logo featured on social media</p>
-                                    <p>Premium placement</p>
-                                    <p>15 minutes professional product photography</p>
+                            <a href="https://www.facebook.com/klickafricaa" rel="noreferrer" target="_blank">
+                                <div className="hover:bg-white hover:text-blue-400 hover:font-semibold rounded-[50px] border flex flex-col justify-between space-y-10 mx-auto p-8 items-center text-center min-h-fit w-[350px]">
+                                    <h1 className="border px-4 py-2 hover:cursor-pointer hover:border-blue-400 transition-all" >GOLD</h1>
+                                    <div className="space-y-4">
+                                        <p>6 x 2 table</p>
+                                        <p>2 products images <br />
+                                            & logo featured on social media</p>
+                                        <p>Premium placement</p>
+                                        <p>15 minutes professional product photography</p>
+                                    </div>
+                                    <h1 className="text-yellow-400 text-2xl font-semibold">N39,000</h1>
                                 </div>
-                                <h1 className="text-yellow-400 text-2xl font-semibold">N39,000</h1>
-                            </div>
+                            </a>
                         </div>
 
                         <h5 className="font-bold text-[20px] text-center">To be a seller, klick <a href="https://www.klick.africa/en/store/The-KLICK-Event-Store/1521205" className="text-yellow-400 hover:underline hover:underline-offset-4 hover:text-yellow-300">here</a> to purchase a table</h5>
