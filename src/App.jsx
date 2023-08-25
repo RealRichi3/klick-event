@@ -20,17 +20,26 @@ export default function App() {
 
     return (
         <>
-            <main className="flex flex-col items-center justify-center">
+
+
+            <div className="circle-container">
+                <div className="circle"></div>
+                <div className="circle2"></div>
+            </div>
+            <main className="flex flex-col -mt-[900px] items-center justify-center">
+
                 <div className="relative mb-28 mt-10">
                     {/* klick shop image */}
+
                     <img src={logo} className="aspect-square" />
                     <p className="italic text-center font-bold text-[#0186eb]">Making Parenting a Breeze...</p>
+
                 </div>
 
                 <div className="bg-[#0186eb] rounded-t-[50%] w-full">
                     <div className="flex flex-col justify-center max-w-[1200px] space-y-8 pb-8 mx-auto -mt-20">
                         {/* 3 images section */}
-                        <div className="flex items-center justify-center space-x-[50px] lg:space-x-[80px]">
+                        <div className="hidden md:flex md:flex-col lg:flex-row items-center justify-center space-y-[30px] lg:space-x-[20px] xl:space-x-[80px]">
                             <img src={image1} className="rounded-t-[50%] rounded-b-[50%] border-[15px] border-white aspect-square h-[300px]" />
 
                             <img src={image2} className="rounded-t-[50%] rounded-b-[50%] border-[15px] border-white aspect-square h-[400px]" />
@@ -38,7 +47,8 @@ export default function App() {
                             <img src={image3} className="rounded-t-[50%] rounded-b-[50%] border-[15px] border-white aspect-square h-[300px]" />
                         </div>
 
-                        <h5 className="mt-40 md:mt-36 lg:mt-16 font-bold text-[20px] text-center">Come Shop Toys, Books, Baby Gear, Children fashion, <br />
+                        <h5 className="mt-[160px] md:mt-40 lg:mt-16 font-bold text-[20px] text-center">
+                            Come Shop Toys, Books, Baby Gear, Children fashion, <br />
                             Women Fashion and Wellness.. and much more.</h5>
 
 
@@ -68,10 +78,10 @@ export default function App() {
 
                         <h4 className="text-yellow-400 text-3xl font-semibold text-center mt-16 mb-10">TABLE RESERVATION COSTING</h4>
 
-                        <div className="flex items-center justify-center space-x-5">
+                        <div className="flex flex-col md:flex-row items-center justify-center gap-5 px-10">
                             {/* cards */}
-                            <div className="rounded-[50px] border flex flex-col justify-between space-y-10 mx-auto p-8 items-center text-center min-h-[500px] w-[388px]">
-                                <h1 className="border px-4 py-2 hover:cursor-pointer" onClick={goToKlick} >SILVER</h1>
+                            <div className="hover:bg-white hover:text-blue-400 hover:font-semibold rounded-[50px] border flex flex-col justify-between space-y-10 mx-auto p-8 items-center text-center min-h-[500px] w-[388px]">
+                                <h1 className="border px-4 py-2 hover:cursor-pointer  hover:border-blue-400 transition-all" onClick={goToKlick} >SILVER</h1>
                                 <div className="space-y-4">
                                     <p>6 x 2 table</p>
                                     <p>2 products images <br />
@@ -80,8 +90,8 @@ export default function App() {
                                 <h1 className="text-yellow-400 text-2xl font-semibold">N19,000</h1>
                             </div>
 
-                            <div className="rounded-[50px] border flex flex-col justify-between space-y-10 mx-auto p-8 items-center text-center min-h-[500px] w-[388px]">
-                                <h1 className="border px-4 py-2 hover:cursor-pointer" onClick={goToKlick} >PLATINUM</h1>
+                            <div className="hover:bg-white hover:text-blue-400 hover:font-semibold rounded-[50px] border flex flex-col justify-between space-y-10 mx-auto p-8 items-center text-center min-h-[500px] w-[388px]">
+                                <h1 className="border px-4 py-2 hover:cursor-pointer hover:border-blue-400 transition-all" onClick={goToKlick} >PLATINUM</h1>
                                 <div className="space-y-4">
                                     <p>6 x 2 table</p>
                                     <p>2 products images <br />
@@ -93,8 +103,8 @@ export default function App() {
                                 <h1 className="text-yellow-400 text-2xl font-semibold">N60,000</h1>
                             </div>
 
-                            <div className="rounded-[50px] border flex flex-col justify-between space-y-10 mx-auto p-8 items-center text-center min-h-[500px] w-[388px]">
-                                <h1 className="border px-4 py-2 hover:cursor-pointer" onClick={goToKlick} >GOLD</h1>
+                            <div className="hover:bg-white hover:text-blue-400 hover:font-semibold rounded-[50px] border flex flex-col justify-between space-y-10 mx-auto p-8 items-center text-center min-h-[500px] w-[388px]">
+                                <h1 className="border px-4 py-2 hover:cursor-pointer hover:border-blue-400 transition-all" onClick={goToKlick} >GOLD</h1>
                                 <div className="space-y-4">
                                     <p>6 x 2 table</p>
                                     <p>2 products images <br />
@@ -106,26 +116,29 @@ export default function App() {
                             </div>
                         </div>
 
-                        <h5 className="font-bold text-[20px] text-center">To be a seller, click <a href="" className="text-yellow-400">here</a> to purchase a table</h5>
+                        <h5 className="font-bold text-[20px] text-center">To be a seller, click <a href="" className="text-yellow-400 hover:underline hover:underline-offset-4 hover:text-yellow-300">here</a> to purchase a table</h5>
 
                         <h5 className="font-semibold text-[20px] text-center">For further information, contact details below</h5>
                     </div>
                 </div>
 
-                <footer className="flex mx-auto items-center h-20 justify-between space-x-40 font-bold text-black px-1">
-                    <div className="flex items-center space-x-4">
-                        <Icons.facebook className="w-6 h-6" />
-                        <Icons.twitter className="w-6 h-6" />
-                        <Icons.instagram className="w-6 h-6" />
-                    </div>
-                    <div className="flex items-center justify-between gap-4">
-                        <div className="flex items-center" onClick={goToWhatsApp}>
-                            <Icons.phone className="w-6 h-6 mr-2" />
-                            <h1 className="text-xl">07010876015</h1>
+                <footer className="bg-[#ffff00] w-full">
+                    <div className="flex mx-auto items-center h-20 justify-between space-x-40 font-bold text-black max-w-[700px]">
+
+                        <div className="flex items-center space-x-4">
+                            <Icons.facebook className="w-6 h-6 hover:cursor-pointer hover:scale-110" />
+                            <Icons.twitter className="w-6 h-6 hover:cursor-pointer hover:scale-110" />
+                            <Icons.instagram className="w-6 h-6 hover:cursor-pointer hover:scale-110" />
                         </div>
-                        <div className="flex items-center">
-                            <Icons.mail className="w-6 h-6 mr-2" />
-                            <h1 className="text-xl">info@klick.africa</h1>
+                        <div className="flex items-center justify-between gap-4">
+                            <div className="flex items-center" onClick={goToWhatsApp}>
+                                <Icons.phone className="w-6 h-6 mr-2 hover:cursor-pointer hover:scale-110" />
+                                <h1 className="text-xl hover:cursor-pointer hover:scale-110">07010876015</h1>
+                            </div>
+                            <div className="flex items-center">
+                                <Icons.mail className="w-6 h-6 mr-2 hover:cursor-pointer hover:scale-105" />
+                                <h1 className="text-xl hover:cursor-pointer hover:scale-110">info@klick.africa</h1>
+                            </div>
                         </div>
                     </div>
                 </footer>
