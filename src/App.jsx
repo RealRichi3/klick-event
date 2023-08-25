@@ -29,10 +29,12 @@ export default function App() {
 
                 <div className="klick-logo-area">
                     <div className="relative mb-28 mt-10 klick-logo">
+                        <VideoPlayer />
+
                         {/* klick shop image */}
 
                         <img src={logo} className="aspect-square" />
-                        <p className="italic text-center font-bold text-[#0186eb]">Making Parenting a Breeze...</p>
+                        {/* <p className="italic text-center font-bold text-[#0186eb]">Making Parenting a Breeze...</p> */}
 
                     </div>
                 </div>
@@ -79,7 +81,6 @@ export default function App() {
 
                         <h4 className="text-yellow-400 text-3xl font-semibold text-center mt-16 mb-10">TABLE RESERVATION COSTING</h4>
 
-                        <VideoPlayer />
 
                         <div className="flex flex-col md:flex-row items-center justify-center gap-5 px-10">
                             {/* cards */}
