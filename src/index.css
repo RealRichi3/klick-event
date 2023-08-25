@@ -3,35 +3,38 @@
 @tailwind utilities;
 
 html {
-    background-color: white;
-    color: white;
+  background-color: white;
+  color: white;
 }
 
 .circle-container {
-    position: relative;
-    width: 100%;
-    height: 100vh; /* Adjust if necessary */
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 500px; /* Adjust if necessary */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .circle,
 .circle2 {
-    width: 1000px;
-    height: 1000px;
-    border-radius: 50%;
-    background-color: #ffff00;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: -20;
+  width: 1000px;
+  height: 1000px;
+  border-radius: 50%;
+  background-color: #ffff00;
+  position: absolute;
+  top: 20%;
+  transform: translateY(-50%);
+  z-index: -20;
 }
 
 .circle {
-    left: -600px;
+  left: -600px;
 }
 
 .circle2 {
-    right: -600px;
+  right: -600px;
 }
 /*  */
 /* @media screen and (max-width: 768px) {
@@ -51,168 +54,187 @@ html {
     }
 } */
 @media screen and (max-width: 1300px) {
-    .circle,
-    .circle2 {
-        width: 510px;
-        height: 510px;
-    }
-    .circle {
-        left: -150px;
-    }
-    .circle2 {
-        right: -150px;
-    }
+  .circle,
+  .circle2 {
+    width: 510px;
+    height: 510px;
+  }
+  .circle-container {
+    height: 900px;
+  }
+  .circle {
+    left: -150px;
+  }
+  .circle2 {
+    right: -150px;
+  }
+
+  .main-container {
+    margin-top: -900px;
+    /* display: none; */
+  }
 }
 @media screen and (max-width: 1200px) {
-    .circle {
-        left: -220px;
-    }
-    .circle2 {
-        right: -220px;
-    }
+  .circle {
+    left: -220px;
+  }
+  .circle2 {
+    right: -220px;
+  }
 }
 @media screen and (max-width: 1100px) {
-    .circle {
-        left: -240px;
-    }
-    .circle2 {
-        right: -240px;
-    }
+  .circle {
+    left: -240px;
+  }
+  .circle2 {
+    right: -240px;
+  }
 
-    .klick-logo-area {
-        width: 500px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  .klick-logo-area {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 @media screen and (max-width: 970px) {
-    .circle {
-        left: -240px;
-    }
-    .circle2 {
-        right: -240px;
-    }
+  .circle {
+    left: -240px;
+  }
+  .circle2 {
+    right: -240px;
+  }
 
-    .klick-logo-area {
-        width: 400px;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        align-items: center;
-    }
-    .klick-logo-area .klick-logo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    .klick-logo-area img {
-        width: 300px;
-        height: 130px;
-    }
+  .klick-logo-area {
+    width: 400px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .circle-container {
+    /* display: none */
+  }
+  .klick-logo-area .klick-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .klick-logo-area img {
+    width: 300px;
+    height: 130px;
+  }
+}
+@media screen and (min-width: 860px) {
 }
 @media screen and (max-width: 860px) {
-    .circle {
-        left: -250px;
-    }
-    .circle2 {
-        right: -250px;
-    }
+  .circle-container {
+    height: 400px;
+  }
+  .circle {
+    left: -250px;
+  }
+  .circle2 {
+    right: -250px;
+  }
 
-    .people_images_section {
-        width: 100%;
-        max-width: 800px; /* Adjust the maximum width as needed */
-        margin: 0 auto;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
+  .people_images_section {
+    width: 100%;
+    max-width: 800px; /* Adjust the maximum width as needed */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
 
-    .people_images_section img {
-        width: 200px;
-        height: 200px;
-        border-width: 5px;
-        margin: 10px;
-    }
+  .people_images_section img {
+    width: 200px;
+    height: 200px;
+    border-width: 5px;
+    margin: 10px;
+  }
+
+  .main-container {
+    margin-top: -400px;
+  }
 }
 @media screen and (max-width: 760px) {
-    .circle {
-        left: -320px;
-    }
-    .circle2 {
-        right: -320px;
-    }
+  .circle {
+    left: -320px;
+  }
+  .circle2 {
+    right: -320px;
+  }
 }
 @media screen and (max-width: 700px) {
-    .circle {
-        left: -350px;
-    }
-    .circle2 {
-        right: -350px;
-    }
-    .people_images_section {
-        width: 100%;
-        max-width: 700px; /* Adjust the maximum width as needed */
-    }
+  .circle {
+    left: -350px;
+  }
+  .circle2 {
+    right: -350px;
+  }
+  .people_images_section {
+    width: 100%;
+    max-width: 700px; /* Adjust the maximum width as needed */
+  }
 
-    .people_images_section img {
-        width: 150px;
-        height: 150px;
-        border-width: 5px;
-        margin: 10px;
-    }
+  .people_images_section img {
+    width: 150px;
+    height: 150px;
+    border-width: 5px;
+    margin: 10px;
+  }
 }
 @media screen and (max-width: 700px) {
-    .circle {
-        left: -400px;
-    }
-    .circle2 {
-        right: -400px;
-    }
+  .circle {
+    left: -400px;
+  }
+  .circle2 {
+    right: -400px;
+  }
 }
 @media screen and (max-width: 530px) {
-    .circle {
-        left: -450px;
-    }
-    .circle2 {
-        right: -450px;
-    }
-    .people_images_section {
-        width: 100%;
-        max-width: 700px; /* Adjust the maximum width as needed */
-    }
+  .circle {
+    left: -450px;
+  }
+  .circle2 {
+    right: -450px;
+  }
+  .people_images_section {
+    width: 100%;
+    max-width: 700px; /* Adjust the maximum width as needed */
+  }
 
-    .people_images_section img {
-        width: 120px;
-        height: 120px;
-        border-width: 5px;
-        margin: 10px;
-    }
-    .children_images_section {
-        height: 120px;
-        margin: 10px;
-        display: flex;
-        /* flex-direction: row; */
-    }
-   
+  .people_images_section img {
+    width: 120px;
+    height: 120px;
+    border-width: 5px;
+    margin: 10px;
+  }
+  .children_images_section {
+    height: 120px;
+    margin: 10px;
+    display: flex;
+    /* flex-direction: row; */
+  }
 }
 
 .video-wrapper {
-    width: 100%;
-    max-width: 800px; /* Adjust the maximum width as needed */
-    margin: 0 auto;
-    background-color: #f0f0f0; /* Set the background color to match your design */
-    border-radius: 10px;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-    overflow: hidden; /* Hide any video overflow */
+  width: 100%;
+  max-width: 800px; /* Adjust the maximum width as needed */
+  margin: 0 auto;
+  background-color: #f0f0f0; /* Set the background color to match your design */
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  overflow: hidden; /* Hide any video overflow */
 }
 
 .flex.flex-col.md:flex-row.items-center.justify-center.gap-5.px-10 {
-    width: 100%;
-    max-width: 800px; /* Adjust the maximum width as needed */
-    margin: 0 auto;
+  width: 100%;
+  max-width: 800px; /* Adjust the maximum width as needed */
+  margin: 0 auto;
 }

@@ -25,7 +25,7 @@ export default function App() {
                 <div className="circle2 lg:rounded-t-[50%] w-full"></div>
             </div>
 
-            <main className="flex -mt-[500px] flex-col lg:-mt-[600px] items-center justify-center">
+            <main className="flex main-container -mt-[500px] flex-col  items-center justify-center">
 
                 <div className="klick-logo-area">
                     <div className="relative mb-28 mt-10 klick-logo">
