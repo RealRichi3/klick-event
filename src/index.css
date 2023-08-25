@@ -33,8 +33,8 @@ html {
 .circle2 {
     right: -600px;
 }
-
-@media screen and (max-width: 768px) {
+/*  */
+/* @media screen and (max-width: 768px) {
     .circle-container {
         height: 100vh;
     }
@@ -49,6 +49,156 @@ html {
     .circle2 {
         right: -300px;
     }
+} */
+@media screen and (max-width: 1300px) {
+    .circle,
+    .circle2 {
+        width: 510px;
+        height: 510px;
+    }
+    .circle {
+        left: -150px;
+    }
+    .circle2 {
+        right: -150px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .circle {
+        left: -220px;
+    }
+    .circle2 {
+        right: -220px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .circle {
+        left: -240px;
+    }
+    .circle2 {
+        right: -240px;
+    }
+
+    .klick-logo-area {
+        width: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 970px) {
+    .circle {
+        left: -240px;
+    }
+    .circle2 {
+        right: -240px;
+    }
+
+    .klick-logo-area {
+        width: 400px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .klick-logo-area .klick-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .klick-logo-area img {
+        width: 300px;
+        height: 130px;
+    }
+}
+@media screen and (max-width: 860px) {
+    .circle {
+        left: -250px;
+    }
+    .circle2 {
+        right: -250px;
+    }
+
+    .people_images_section {
+        width: 100%;
+        max-width: 800px; /* Adjust the maximum width as needed */
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .people_images_section img {
+        width: 200px;
+        height: 200px;
+        border-width: 5px;
+        margin: 10px;
+    }
+}
+@media screen and (max-width: 760px) {
+    .circle {
+        left: -320px;
+    }
+    .circle2 {
+        right: -320px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .circle {
+        left: -350px;
+    }
+    .circle2 {
+        right: -350px;
+    }
+    .people_images_section {
+        width: 100%;
+        max-width: 700px; /* Adjust the maximum width as needed */
+    }
+
+    .people_images_section img {
+        width: 150px;
+        height: 150px;
+        border-width: 5px;
+        margin: 10px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .circle {
+        left: -400px;
+    }
+    .circle2 {
+        right: -400px;
+    }
+}
+@media screen and (max-width: 530px) {
+    .circle {
+        left: -450px;
+    }
+    .circle2 {
+        right: -450px;
+    }
+    .people_images_section {
+        width: 100%;
+        max-width: 700px; /* Adjust the maximum width as needed */
+    }
+
+    .people_images_section img {
+        width: 120px;
+        height: 120px;
+        border-width: 5px;
+        margin: 10px;
+    }
+    .children_images_section {
+        height: 120px;
+        margin: 10px;
+        display: flex;
+        /* flex-direction: row; */
+    }
+   
 }
 
 .video-wrapper {

@@ -25,20 +25,22 @@ export default function App() {
                 <div className="circle2 lg:rounded-t-[50%] w-full"></div>
             </div>
 
-            <main className="flex flex-col -mt-[500px] lg:-mt-[600px] items-center justify-center">
+            <main className="flex -mt-[500px] flex-col lg:-mt-[600px] items-center justify-center">
 
-                <div className="relative mb-28 mt-10">
-                    {/* klick shop image */}
+                <div className="klick-logo-area">
+                    <div className="relative mb-28 mt-10 klick-logo">
+                        {/* klick shop image */}
 
-                    <img src={logo} className="aspect-square" />
-                    <p className="italic text-center font-bold text-[#0186eb]">Making Parenting a Breeze...</p>
+                        <img src={logo} className="aspect-square" />
+                        <p className="italic text-center font-bold text-[#0186eb]">Making Parenting a Breeze...</p>
 
+                    </div>
                 </div>
 
                 <div className="bg-[#0186eb] curve lg:rounded-t-[50%] w-full">
                     <div className="flex flex-col justify-center w-[100vw] max-w-[1200px] space-y-8 pb-8 mx-auto -mt-20">
                         {/* 3 images section */}
-                        <div className="hidden md:flex md:flex-col lg:flex-row items-center justify-center space-y-[30px] lg:space-x-[20px] xl:space-x-[80px]">
+                        <div className="people_images_section flex md:flex-col lg:flex-row items-center justify-center space-y-[30px] lg:space-x-[20px] xl:space-x-[80px]">
                             <img src={image1} className="rounded-t-[50%] rounded-b-[50%] border-[15px] border-white aspect-square h-[300px]" />
 
                             <img src={image2} className="rounded-t-[50%] rounded-b-[50%] border-[15px] border-white aspect-square h-[400px]" />
@@ -51,7 +53,7 @@ export default function App() {
                             Women Fashion and Wellness.. and much more.</h5>
 
 
-                        <div className="flex items-center justify-center space-x-20 lg:space-x-32">
+                        <div className="children_images_section flex items-center justify-center space-x-10 lg:space-x-32">
                             <div className="flex flex-col items-center">
                                 <div className="rounded-t-[50%] rounded-b-[50%] border-[5px] border-yellow-400">
                                     <img src={seminars} className="aspect-square h-[100px]" />
@@ -81,7 +83,7 @@ export default function App() {
 
                         <div className="flex flex-col md:flex-row items-center justify-center gap-5 px-10">
                             {/* cards */}
-                            <div className="hover:bg-white hover:text-blue-400 hover:font-semibold rounded-[50px] border flex flex-col justify-between space-y-10 mx-auto p-8 items-center text-center min-h-[500px] w-[388px]">
+                            <div className="hover:bg-white hover:text-blue-400 hover:font-semibold rounded-[50px] border flex flex-col justify-between space-y-10 mx-auto p-8 items-center text-center min-h-fit w-[350px]">
                                 <h1 className="border px-4 py-2 hover:cursor-pointer  hover:border-blue-400 transition-all" >SILVER</h1>
                                 <div className="space-y-4">
                                     <p>6 x 2 table</p>
@@ -91,7 +93,7 @@ export default function App() {
                                 <h1 className="text-yellow-400 text-2xl font-semibold">N19,000</h1>
                             </div>
 
-                            <div className="hover:bg-white hover:text-blue-400 hover:font-semibold rounded-[50px] border flex flex-col justify-between space-y-10 mx-auto p-8 items-center text-center min-h-[500px] w-[388px]">
+                            <div className="hover:bg-white hover:text-blue-400 hover:font-semibold rounded-[50px] border flex flex-col justify-between space-y-10 mx-auto p-8 items-center text-center min-h-fit w-[350px]">
                                 <h1 className="border px-4 py-2 hover:cursor-pointer hover:border-blue-400 transition-all" >PLATINUM</h1>
                                 <div className="space-y-4">
                                     <p>6 x 2 table</p>
@@ -104,7 +106,7 @@ export default function App() {
                                 <h1 className="text-yellow-400 text-2xl font-semibold">N60,000</h1>
                             </div>
 
-                            <div className="hover:bg-white hover:text-blue-400 hover:font-semibold rounded-[50px] border flex flex-col justify-between space-y-10 mx-auto p-8 items-center text-center min-h-[500px] w-[388px]">
+                            <div className="hover:bg-white hover:text-blue-400 hover:font-semibold rounded-[50px] border flex flex-col justify-between space-y-10 mx-auto p-8 items-center text-center min-h-fit w-[350px]">
                                 <h1 className="border px-4 py-2 hover:cursor-pointer hover:border-blue-400 transition-all" >GOLD</h1>
                                 <div className="space-y-4">
                                     <p>6 x 2 table</p>
