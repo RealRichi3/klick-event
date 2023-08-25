@@ -33,3 +33,36 @@ html {
 .circle2 {
     right: -600px;
 }
+
+@media screen and (max-width: 768px) {
+    .circle-container {
+        height: 100vh;
+    }
+    .circle,
+    .circle2 {
+        width: 500px;
+        height: 500px;
+    }
+    .circle {
+        left: -300px;
+    }
+    .circle2 {
+        right: -300px;
+    }
+}
+
+.video-wrapper {
+    width: 100%;
+    max-width: 800px; /* Adjust the maximum width as needed */
+    margin: 0 auto;
+    background-color: #f0f0f0; /* Set the background color to match your design */
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    overflow: hidden; /* Hide any video overflow */
+}
+
+.flex.flex-col.md:flex-row.items-center.justify-center.gap-5.px-10 {
+    width: 100%;
+    max-width: 800px; /* Adjust the maximum width as needed */
+    margin: 0 auto;
+}
