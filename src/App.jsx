@@ -33,7 +33,7 @@ export default function App() {
 
                         {/* klick shop image */}
 
-                        <img src={logo} className="aspect-square" />
+                        {/* <img src={logo} className="aspect-square" /> */}
                         {/* <p className="italic text-center font-bold text-[#0186eb]">Making Parenting a Breeze...</p> */}
 
                     </div>
