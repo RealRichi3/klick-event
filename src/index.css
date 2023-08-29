@@ -190,6 +190,10 @@ html {
   }
 }
 @media screen and (max-width: 760px) {
+  .footer_container {
+    height: fit-content;
+    padding: 10px;
+  }
   .circle {
     left: -320px;
   }

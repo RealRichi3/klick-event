@@ -130,7 +130,7 @@ export default function App() {
                 </div>
 
                 <footer className="bg-[#ffff00] w-[100%]">
-                    <div className="flex mx-auto items-center h-20 justify-between space-x-4 px-4 font-bold text-black">
+                    <div className="footer_container flex mx-auto items-center h-20 justify-between space-x-4 px-4 font-bold text-black">
 
                         <div className="flex items-center space-x-4">
                             <a href="https://www.facebook.com/klickafricaa" rel="noreferrer" target="_blank"><Icons.facebook className="w-6 h-6 hover:cursor-pointer hover:scale-110" /></a>
