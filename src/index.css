@@ -201,6 +201,7 @@ html {
     right: -320px;
   }
 }
+/*  */
 @media screen and (max-width: 700px) {
   .circle {
     left: -350px;
