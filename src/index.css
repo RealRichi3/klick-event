@@ -49,6 +49,12 @@ html {
   /* flex-direction: column; */
   align-items: center;
 }
+
+.packages_container {
+  display: flex;
+  flex-direction: row;
+  /* display: none; */
+}
 /*  */
 /* @media screen and (max-width: 768px) {
     .circle-container {
@@ -96,6 +102,9 @@ html {
   }
 }
 @media screen and (max-width: 1100px) {
+  .packages {
+    width: 300px;
+  }
   .circle {
     left: -240px;
   }
@@ -111,6 +120,11 @@ html {
   }
 }
 @media screen and (max-width: 970px) {
+  .packages_container {
+    display: flex;
+    flex-direction: column;
+    /* display: none; */
+  }
   .circle {
     left: -240px;
   }

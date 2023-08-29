@@ -11,8 +11,8 @@ import VideoPlayer from "./components/VideoPlayer"
 
 
 export default function App() {
-    const goToWhatsApp = () => {
-        window.location.href = 'https://wa.me/2349089110000';
+    const goToWhatsApp = (phoneNumber) => {
+        window.location.href = `https://wa.me/234${phoneNumber}`;
     }
 
     return (
@@ -79,10 +79,10 @@ export default function App() {
                         <h4 className="text-yellow-400 text-3xl font-semibold text-center mt-16 mb-10">TABLE RESERVATION COSTING</h4>
 
 
-                        <div className="flex flex-col md:flex-row items-center justify-center gap-5 px-10">
+                        <div className="items-center justify-center gap-5 px-10 packages_container">
                             {/* cards */}
                             <a href="https://www.klick.africa/en/store/The-KLICK-Event-Store/1521205" rel="noreferrer" target="_blank">
-                                <div className="hover:bg-white hover:text-blue-400 hover:font-semibold rounded-[50px] border flex flex-col justify-between space-y-10 mx-auto p-8 items-center text-center min-h-fit md:h-[500px] w-[350px]">
+                                <div className="packages hover:bg-white hover:text-blue-400 hover:font-semibold rounded-[50px] border flex flex-col justify-between space-y-10 mx-auto p-8 items-center text-center min-h-fit md:h-[500px] w-[350px]">
                                     <h1 className="border px-4 py-2 hover:cursor-pointer  hover:border-blue-400 transition-all" >SILVER</h1>
                                     <div className="space-y-4">
                                         <p>6 x 2 table</p>
@@ -94,7 +94,7 @@ export default function App() {
                             </a>
 
                             <a href="https://www.klick.africa/en/store/The-KLICK-Event-Store/1521205" rel="noreferrer" target="_blank">
-                                <div className="hover:bg-white hover:text-blue-400 hover:font-semibold rounded-[50px] border flex flex-col justify-between space-y-10 mx-auto p-8 items-center text-center min-h-fit md:h-[500px] w-[350px]">
+                                <div className="packages hover:bg-white hover:text-blue-400 hover:font-semibold rounded-[50px] border flex flex-col justify-between space-y-10 mx-auto p-8 items-center text-center min-h-fit md:h-[500px] w-[350px]">
                                     <h1 className="border px-4 py-2 hover:cursor-pointer hover:border-blue-400 transition-all" >PLATINUM</h1>
                                     <div className="space-y-4">
                                         <p>6 x 2 table</p>
@@ -109,7 +109,7 @@ export default function App() {
                             </a>
 
                             <a href="https://www.klick.africa/en/store/The-KLICK-Event-Store/1521205" rel="noreferrer" target="_blank">
-                                <div className="hover:bg-white hover:text-blue-400 hover:font-semibold rounded-[50px] border flex flex-col justify-between space-y-10 mx-auto p-8 items-center text-center min-h-fit md:h-[500px] w-[350px]">
+                                <div className="packages hover:bg-white hover:text-blue-400 hover:font-semibold rounded-[50px] border flex flex-col justify-between space-y-10 mx-auto p-8 items-center text-center min-h-fit md:h-[500px] w-[350px]">
                                     <h1 className="border px-4 py-2 hover:cursor-pointer hover:border-blue-400 transition-all" >GOLD</h1>
                                     <div className="space-y-4">
                                         <p>6 x 2 table</p>
@@ -138,9 +138,13 @@ export default function App() {
                             <a href="https://www.instagram.com/klickafrica/" rel="noreferrer" target="_blank"><Icons.instagram className="w-6 h-6 hover:cursor-pointer hover:scale-110" /></a>
                         </div>
                         <div className="flex flex-col md:flex-row justify-between gap-2">
-                            <div className="flex items-center" onClick={goToWhatsApp}>
+                            <div className="flex items-center" onClick={() => goToWhatsApp('9089110000')}>
                                 <a href="" rel="noreferrer" target="_blank"><Icons.phone className="w-6 h-6 mr-2 hover:cursor-pointer hover:scale-110" /></a>
                                 <h1 className="text-xl hover:cursor-pointer hover:scale-110">09089110000</h1>
+                            </div>
+                            <div className="flex items-center" onClick={() => goToWhatsApp('7010876015')}>
+                                <a href="" rel="noreferrer" target="_blank"><Icons.phone className="w-6 h-6 mr-2 hover:cursor-pointer hover:scale-110" /></a>
+                                <h1 className="text-xl hover:cursor-pointer hover:scale-110">07010876015</h1>
                             </div>
                             <div className="flex items-center">
                                 <a href="" rel="noreferrer" target="_blank"><Icons.mail className="w-6 h-6 mr-2 hover:cursor-pointer hover:scale-105" /></a>
