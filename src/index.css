@@ -36,6 +36,19 @@ html {
 .circle2 {
   right: -600px;
 }
+
+.logo {
+  margin: 10px auto;
+  height: 100px;
+}
+
+.klick-logo-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+  align-items: center;
+}
 /*  */
 /* @media screen and (max-width: 768px) {
     .circle-container {

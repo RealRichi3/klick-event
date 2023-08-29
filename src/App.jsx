@@ -4,6 +4,7 @@ import kids from "./assets/kids.png"
 import image1 from './assets/image1.png'
 import image2 from './assets/image2.png'
 import image3 from './assets/image3.png'
+import logo from './assets/logo.png'
 
 import { Icons } from "./components/Icons"
 import VideoPlayer from "./components/VideoPlayer"
@@ -29,7 +30,7 @@ export default function App() {
 
                         {/* klick shop image */}
 
-                        {/* <img src={logo} className="aspect-square" /> */}
+                        <img src={logo} className="logo" />
                         {/* <p className="italic text-center font-bold text-[#0186eb]">Making Parenting a Breeze...</p> */}
 
                     </div>
