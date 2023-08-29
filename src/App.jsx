@@ -11,7 +11,7 @@ import VideoPlayer from "./components/VideoPlayer"
 
 export default function App() {
     const goToWhatsApp = () => {
-        window.location.href = 'https://wa.me/2347010876015';
+        window.location.href = 'https://wa.me/2349089110000';
     }
 
     return (
@@ -139,7 +139,7 @@ export default function App() {
                         <div className="flex flex-col md:flex-row justify-between gap-2">
                             <div className="flex items-center" onClick={goToWhatsApp}>
                                 <a href="" rel="noreferrer" target="_blank"><Icons.phone className="w-6 h-6 mr-2 hover:cursor-pointer hover:scale-110" /></a>
-                                <h1 className="text-xl hover:cursor-pointer hover:scale-110">07010876015</h1>
+                                <h1 className="text-xl hover:cursor-pointer hover:scale-110">09089110000</h1>
                             </div>
                             <div className="flex items-center">
                                 <a href="" rel="noreferrer" target="_blank"><Icons.mail className="w-6 h-6 mr-2 hover:cursor-pointer hover:scale-105" /></a>
